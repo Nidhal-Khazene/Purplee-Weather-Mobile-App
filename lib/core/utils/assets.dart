@@ -46,6 +46,10 @@ class Assets {
   /// assets/images/tornado.svg
   static const String assetsImagesTornado = "assets/images/tornado.svg";
 
+  /// Assets for assetsImagesWeatherBg
+  /// assets/images/weather_bg.png
+  static const String assetsImagesWeatherBg = "assets/images/weather_bg.png";
+
   /// Assets for assetsImagesWeatherRectangleItem
   /// assets/images/weather_rectangle_item.svg
   static const String assetsImagesWeatherRectangleItem = "assets/images/weather_rectangle_item.svg";

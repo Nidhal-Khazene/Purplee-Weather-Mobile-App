@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:purplee/core/routes/on_generate_route.dart';
 import 'package:purplee/core/utils/app_theme.dart';
+import 'package:purplee/features/home/presentation/views/home_view.dart';
 
 void main() {
   runApp(const Purplee());
@@ -11,9 +13,11 @@ class Purplee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Purplee',
       theme: AppTheme.primary,
-      home: const Scaffold(body: Center(child: Text('Hello, Purplee!'))),
+      onGenerateRoute: onGenerateRoutes,
+      initialRoute: HomeView.routeName,
     );
   }
 }
