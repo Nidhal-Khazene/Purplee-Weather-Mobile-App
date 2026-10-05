@@ -2,10 +2,6 @@
 class Assets {
   Assets._();
   
-  /// Assets for assetsImagesBottomNavBar
-  /// assets/images/bottom_nav_bar.png
-  static const String assetsImagesBottomNavBar = "assets/images/bottom_nav_bar.png";
-
   /// Assets for assetsImagesListIcon
   /// assets/images/list_icon.svg
   static const String assetsImagesListIcon = "assets/images/list_icon.svg";
@@ -49,10 +45,6 @@ class Assets {
   /// Assets for assetsImagesWeatherBg
   /// assets/images/weather_bg.png
   static const String assetsImagesWeatherBg = "assets/images/weather_bg.png";
-
-  /// Assets for assetsImagesWeatherHourlyWeeklyBox
-  /// assets/images/weather_hourly_weekly_box.png
-  static const String assetsImagesWeatherHourlyWeeklyBox = "assets/images/weather_hourly_weekly_box.png";
 
   /// Assets for assetsImagesWeatherRectangleItem
   /// assets/images/weather_rectangle_item.svg
