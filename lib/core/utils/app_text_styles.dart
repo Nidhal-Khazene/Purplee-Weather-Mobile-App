@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
+  static final TextStyle extraLight96 = const TextStyle(
+    fontSize: 96,
+    fontWeight: FontWeight.w200,
+    height: 0.73,
+    letterSpacing: 0.37,
+  );
   // Regular
   static final TextStyle regular64 = const TextStyle(
     fontSize: 64,

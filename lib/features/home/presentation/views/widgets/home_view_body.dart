@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:purplee/core/utils/app_fonts.dart';
+import 'package:purplee/core/utils/app_text_styles.dart';
 import 'package:purplee/core/utils/assets.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_list_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_bar_icon.dart';
@@ -13,6 +15,49 @@ class HomeViewBody extends StatelessWidget {
       children: [
         Positioned.fill(
           child: Image.asset(Assets.assetsImagesMainImageBg, fit: BoxFit.fill),
+        ),
+        Positioned(
+          top: MediaQuery.of(context).size.height * 0.1,
+          left: 0,
+          right: 0,
+          child: Column(
+            children: [
+              Text(
+                'Montreal',
+                textAlign: TextAlign.center,
+                style: AppTextStyles.regular34.copyWith(color: Colors.white),
+              ),
+              const SizedBox(height: 12),
+
+              Text(
+                '19°',
+                textAlign: TextAlign.center,
+                style: AppTextStyles.extraLight96.copyWith(color: Colors.white),
+              ),
+              const SizedBox(height: 12),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: 'Mostly Clear\n',
+                      style: AppTextStyles.semibold20.copyWith(
+                        color: const Color(0x99EBEBF5),
+                        fontFamily: AppFonts.primary,
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'H:24°   L:18°',
+                      style: AppTextStyles.semibold20.copyWith(
+                        color: Colors.white,
+                        fontFamily: AppFonts.primary,
+                      ),
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
         Positioned(
           bottom: MediaQuery.of(context).size.height * 0.18,
