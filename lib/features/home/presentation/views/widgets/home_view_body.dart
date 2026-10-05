@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:purplee/core/utils/assets.dart';
-import 'package:purplee/shared/custom_nav_bar_icon.dart';
+import 'package:purplee/features/home/presentation/views/widgets/home_list_nav_bar_icon.dart';
+import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_bar_icon.dart';
+import 'package:purplee/features/home/presentation/views/widgets/home_plus_nav_bar_icon.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -28,7 +30,17 @@ class HomeViewBody extends StatelessWidget {
           bottom: MediaQuery.of(context).size.height * 0.0525,
           left: 0,
           right: 0,
-          child: const CustomPlusNavBarIcon(),
+          child: const HomePlusNavBarIcon(),
+        ),
+        Positioned(
+          bottom: MediaQuery.of(context).size.height * 0.03,
+          left: MediaQuery.of(context).size.width * 0.08,
+          child: const HomeMapNavBarIcon(),
+        ),
+        Positioned(
+          bottom: MediaQuery.of(context).size.height * 0.04,
+          right: MediaQuery.of(context).size.width * 0.1,
+          child: const HomeListNavBarIcon(),
         ),
       ],
     );
