@@ -3,8 +3,8 @@ import 'package:purplee/core/utils/assets.dart';
 import 'package:purplee/shared/models/hourly_forecast_model.dart';
 import 'package:purplee/shared/widgets/hourly_weather_carousel_item.dart';
 
-class CustomCarouselView extends StatefulWidget {
-  const CustomCarouselView({
+class CustomHourlyCarouselView extends StatefulWidget {
+  const CustomHourlyCarouselView({
     super.key,
     this.items,
     this.initialSelectedIndex = 1,
@@ -50,10 +50,11 @@ class CustomCarouselView extends StatefulWidget {
   ];
 
   @override
-  State<CustomCarouselView> createState() => _CustomCarouselViewState();
+  State<CustomHourlyCarouselView> createState() =>
+      _CustomHourlyCarouselViewState();
 }
 
-class _CustomCarouselViewState extends State<CustomCarouselView> {
+class _CustomHourlyCarouselViewState extends State<CustomHourlyCarouselView> {
   late int _selectedIndex;
 
   @override
@@ -64,7 +65,8 @@ class _CustomCarouselViewState extends State<CustomCarouselView> {
 
   @override
   Widget build(BuildContext context) {
-    final forecastList = widget.items ?? CustomCarouselView.defaultForecasts;
+    final forecastList =
+        widget.items ?? CustomHourlyCarouselView.defaultForecasts;
 
     return AspectRatio(
       aspectRatio: 2.1,
