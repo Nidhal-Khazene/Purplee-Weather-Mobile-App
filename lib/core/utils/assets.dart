@@ -58,6 +58,10 @@ class Assets {
   /// assets/images/weather_bg.png
   static const String assetsImagesWeatherBg = "assets/images/weather_bg.png";
 
+  /// Assets for assetsImagesWeatherBgShadow
+  /// assets/images/weather_bg_shadow.png
+  static const String assetsImagesWeatherBgShadow = "assets/images/weather_bg_shadow.png";
+
   /// Assets for assetsImagesWeatherRectangleItem
   /// assets/images/weather_rectangle_item.svg
   static const String assetsImagesWeatherRectangleItem = "assets/images/weather_rectangle_item.svg";
