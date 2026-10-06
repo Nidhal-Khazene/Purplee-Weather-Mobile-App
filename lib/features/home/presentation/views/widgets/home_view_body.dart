@@ -6,6 +6,7 @@ import 'package:purplee/features/home/presentation/views/widgets/home_list_nav_b
 import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_plus_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/segmented_control.dart';
+import 'package:purplee/shared/widgets/custom_carousel_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -92,6 +93,12 @@ class HomeViewBody extends StatelessWidget {
           left: MediaQuery.of(context).size.width * 0.07,
           right: MediaQuery.of(context).size.width * 0.07,
           child: const SegementedControl(),
+        ),
+        Positioned(
+          bottom: MediaQuery.of(context).size.height * 0.12,
+          left: MediaQuery.of(context).size.width * 0.07,
+          right: MediaQuery.of(context).size.width * 0.07,
+          child: const CustomCarouselView(),
         ),
       ],
     );
