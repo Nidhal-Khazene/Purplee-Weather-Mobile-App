@@ -7,6 +7,7 @@ import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_ba
 import 'package:purplee/features/home/presentation/views/widgets/home_plus_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/segmented_control.dart';
 import 'package:purplee/shared/widgets/custom_hourly_carousel_view.dart';
+import 'package:purplee/shared/widgets/custom_weekly_carousel_view.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -95,6 +96,14 @@ class _HomeViewBodyState extends State<HomeViewBody> {
           child: const HomeListNavBarIcon(),
         ),
         Positioned(
+          bottom: MediaQuery.of(context).size.height * 0.12,
+          left: MediaQuery.of(context).size.width * 0.07,
+          right: MediaQuery.of(context).size.width * 0.07,
+          child: isHourlySelected
+              ? const CustomHourlyCarouselView()
+              : const CustomWeeklyCarouselView(),
+        ),
+        Positioned(
           bottom: MediaQuery.of(context).size.height * 0.338,
           left: MediaQuery.of(context).size.width * 0.07,
           right: MediaQuery.of(context).size.width * 0.07,
@@ -110,12 +119,6 @@ class _HomeViewBodyState extends State<HomeViewBody> {
               });
             },
           ),
-        ),
-        Positioned(
-          bottom: MediaQuery.of(context).size.height * 0.12,
-          left: MediaQuery.of(context).size.width * 0.07,
-          right: MediaQuery.of(context).size.width * 0.07,
-          child: const CustomHourlyCarouselView(),
         ),
       ],
     );

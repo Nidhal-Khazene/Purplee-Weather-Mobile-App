@@ -14,32 +14,35 @@ class SegementedControl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        GestureDetector(
-          onTap: onHourlyForecastTap,
-          child: Text(
-            'Hourly Forecast',
-            style: AppTextStyles.semibold15.copyWith(
-              color: AppColors.darkSecondary,
-              height: 1.33,
-              letterSpacing: -0.30,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          GestureDetector(
+            onTap: onHourlyForecastTap,
+            child: Text(
+              'Hourly Forecast',
+              style: AppTextStyles.semibold15.copyWith(
+                color: AppColors.darkSecondary,
+                height: 1.33,
+                letterSpacing: -0.30,
+              ),
             ),
           ),
-        ),
-        GestureDetector(
-          onTap: onWeeklyForecastTap,
-          child: Text(
-            'Weekly Forecast',
-            style: AppTextStyles.semibold15.copyWith(
-              color: AppColors.darkSecondary,
-              height: 1.33,
-              letterSpacing: -0.30,
+          GestureDetector(
+            onTap: onWeeklyForecastTap,
+            child: Text(
+              'Weekly Forecast',
+              style: AppTextStyles.semibold15.copyWith(
+                color: AppColors.darkSecondary,
+                height: 1.33,
+                letterSpacing: -0.30,
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
