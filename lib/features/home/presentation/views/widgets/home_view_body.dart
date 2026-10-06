@@ -5,6 +5,7 @@ import 'package:purplee/core/utils/assets.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_list_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_bar_icon.dart';
 import 'package:purplee/features/home/presentation/views/widgets/home_plus_nav_bar_icon.dart';
+import 'package:purplee/features/home/presentation/views/widgets/segmented_control.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -28,7 +29,6 @@ class HomeViewBody extends StatelessWidget {
                 style: AppTextStyles.regular34.copyWith(color: Colors.white),
               ),
               const SizedBox(height: 12),
-
               Text(
                 '19°',
                 textAlign: TextAlign.center,
@@ -86,6 +86,12 @@ class HomeViewBody extends StatelessWidget {
           bottom: MediaQuery.of(context).size.height * 0.04,
           right: MediaQuery.of(context).size.width * 0.1,
           child: const HomeListNavBarIcon(),
+        ),
+        Positioned(
+          bottom: MediaQuery.of(context).size.height * 0.338,
+          left: MediaQuery.of(context).size.width * 0.07,
+          right: MediaQuery.of(context).size.width * 0.07,
+          child: const SegementedControl(),
         ),
       ],
     );
