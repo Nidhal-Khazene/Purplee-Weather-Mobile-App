@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:purplee/core/routes/on_generate_route.dart';
 import 'package:purplee/core/utils/app_theme.dart';
-import 'package:purplee/features/home/presentation/views/home_view.dart';
+import 'package:purplee/views/home_view.dart';
 
 void main() {
   runApp(const Purplee());

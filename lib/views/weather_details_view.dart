@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:purplee/features/home/presentation/views/widgets/weather_details_view_body.dart';
+import 'package:purplee/views/widgets/weather_details_view_body.dart';
 
 class WeatherDetailsView extends StatelessWidget {
   const WeatherDetailsView({super.key});

@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:purplee/core/utils/app_fonts.dart';
 import 'package:purplee/core/utils/app_text_styles.dart';
 import 'package:purplee/core/utils/assets.dart';
-import 'package:purplee/features/home/presentation/views/widgets/home_list_nav_bar_icon.dart';
-import 'package:purplee/features/home/presentation/views/widgets/home_map_nav_bar_icon.dart';
-import 'package:purplee/features/home/presentation/views/widgets/home_plus_nav_bar_icon.dart';
-import 'package:purplee/features/home/presentation/views/widgets/segmented_control.dart';
+import 'package:purplee/views/weather_cities_list_view.dart';
+import 'package:purplee/views/widgets/home_list_nav_bar_icon.dart';
+import 'package:purplee/views/widgets/home_map_nav_bar_icon.dart';
+import 'package:purplee/views/widgets/home_plus_nav_bar_icon.dart';
+import 'package:purplee/views/widgets/segmented_control.dart';
 import 'package:purplee/shared/widgets/custom_hourly_carousel_view.dart';
 import 'package:purplee/shared/widgets/custom_weekly_carousel_view.dart';
 
@@ -93,7 +94,11 @@ class _HomeViewBodyState extends State<HomeViewBody> {
         Positioned(
           bottom: MediaQuery.of(context).size.height * 0.04,
           right: MediaQuery.of(context).size.width * 0.1,
-          child: const HomeListNavBarIcon(),
+          child: HomeListNavBarIcon(
+            onTap: () {
+              Navigator.pushNamed(context, WeatherCitiesListView.routeName);
+            },
+          ),
         ),
         Positioned(
           bottom: MediaQuery.of(context).size.height * 0.12,
