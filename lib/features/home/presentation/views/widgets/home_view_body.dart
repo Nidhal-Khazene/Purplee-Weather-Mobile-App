@@ -108,6 +108,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
           left: MediaQuery.of(context).size.width * 0.07,
           right: MediaQuery.of(context).size.width * 0.07,
           child: SegementedControl(
+            isHourlySelected: isHourlySelected,
             onHourlyForecastTap: () {
               setState(() {
                 isHourlySelected = true;

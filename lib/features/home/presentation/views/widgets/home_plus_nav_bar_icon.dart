@@ -8,9 +8,6 @@ class HomePlusNavBarIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: const CustomPlusNavBarIcon(),
-    );
+    return GestureDetector(onTap: onTap, child: const CustomPlusNavBarIcon());
   }
 }

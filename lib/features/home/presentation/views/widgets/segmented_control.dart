@@ -5,10 +5,12 @@ import 'package:purplee/core/utils/app_text_styles.dart';
 class SegementedControl extends StatelessWidget {
   const SegementedControl({
     super.key,
+    this.isHourlySelected = true,
     this.onHourlyForecastTap,
     this.onWeeklyForecastTap,
   });
 
+  final bool isHourlySelected;
   final void Function()? onHourlyForecastTap;
   final void Function()? onWeeklyForecastTap;
 
@@ -24,9 +26,9 @@ class SegementedControl extends StatelessWidget {
             child: Text(
               'Hourly Forecast',
               style: AppTextStyles.semibold15.copyWith(
-                color: AppColors.darkSecondary,
-                height: 1.33,
-                letterSpacing: -0.30,
+                color: isHourlySelected
+                    ? AppColors.darkPrimary
+                    : AppColors.darkSecondary,
               ),
             ),
           ),
@@ -35,9 +37,9 @@ class SegementedControl extends StatelessWidget {
             child: Text(
               'Weekly Forecast',
               style: AppTextStyles.semibold15.copyWith(
-                color: AppColors.darkSecondary,
-                height: 1.33,
-                letterSpacing: -0.30,
+                color: isHourlySelected
+                    ? AppColors.darkSecondary
+                    : AppColors.darkPrimary,
               ),
             ),
           ),
