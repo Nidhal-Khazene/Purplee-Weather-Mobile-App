@@ -3,9 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:purplee/core/utils/app_colors.dart';
 import 'package:purplee/core/utils/app_text_styles.dart';
 import 'package:purplee/core/utils/assets.dart';
+import 'package:purplee/shared/models/weather_city_model.dart';
 
 class WeatherCitiesItem extends StatelessWidget {
-  const WeatherCitiesItem({super.key});
+  const WeatherCitiesItem({super.key, required this.weatherCityModel});
+
+  final WeatherCityModel weatherCityModel;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +17,7 @@ class WeatherCitiesItem extends StatelessWidget {
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         child: Stack(
+          clipBehavior: Clip.none,
           children: [
             Positioned.fill(
               child: SvgPicture.asset(
@@ -28,7 +32,7 @@ class WeatherCitiesItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '19°',
+                    '${weatherCityModel.temperature}°',
                     style: AppTextStyles.regular64.copyWith(
                       color: Colors.white,
                     ),
@@ -37,13 +41,14 @@ class WeatherCitiesItem extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: 'H:24°  L:18°\n',
+                          text:
+                              'H:${weatherCityModel.highTemp}°  L:${weatherCityModel.lowTemp}°\n',
                           style: AppTextStyles.regular13.copyWith(
                             color: AppColors.darkSecondary,
                           ),
                         ),
                         TextSpan(
-                          text: 'Montreal, Canada',
+                          text: weatherCityModel.location,
                           style: AppTextStyles.regular17.copyWith(
                             color: Colors.white,
                           ),
@@ -55,12 +60,21 @@ class WeatherCitiesItem extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 16,
+              top: -16,
               right: 16,
               child: Image.asset(
-                Assets.assetsImagesMoonCloudMidRain,
+                weatherCityModel.image,
                 width: 160,
                 height: 160,
+              ),
+            ),
+            Positioned(
+              bottom: 24,
+              right: 42,
+              child: Text(
+                weatherCityModel.weatherState,
+                textAlign: TextAlign.right,
+                style: AppTextStyles.regular13.copyWith(color: Colors.white),
               ),
             ),
           ],

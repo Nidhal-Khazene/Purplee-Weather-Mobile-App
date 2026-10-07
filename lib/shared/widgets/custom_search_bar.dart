@@ -19,7 +19,8 @@ class CustomSearchBar extends StatelessWidget {
     return Container(
       height: 36,
       decoration: BoxDecoration(
-        color: AppColors.weatherSolidNavy, // Or another dark color matching the UI
+        color:
+            AppColors.weatherSolidNavy, // Or another dark color matching the UI
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
@@ -34,9 +35,7 @@ class CustomSearchBar extends StatelessWidget {
         controller: controller,
         onChanged: onChanged,
         onTap: onTap,
-        style: AppTextStyles.regular17.copyWith(
-          color: AppColors.darkPrimary,
-        ),
+        style: AppTextStyles.regular17.copyWith(color: AppColors.darkPrimary),
         decoration: InputDecoration(
           hintText: 'Search for a city or airport',
           hintStyle: AppTextStyles.regular17.copyWith(
@@ -55,7 +54,10 @@ class CustomSearchBar extends StatelessWidget {
             minHeight: 36,
           ),
           border: InputBorder.none,
-          contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 8),
+          contentPadding: const EdgeInsets.symmetric(
+            vertical: 0,
+            horizontal: 8,
+          ),
           isDense: true,
         ),
         textAlignVertical: TextAlignVertical.center,
