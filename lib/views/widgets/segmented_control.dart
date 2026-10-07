@@ -19,27 +19,46 @@ class SegementedControl extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GestureDetector(
-            onTap: onHourlyForecastTap,
-            child: Text(
-              'Hourly Forecast',
-              style: AppTextStyles.semibold15(context).copyWith(
-                color: isHourlySelected
-                    ? AppColors.darkPrimary
-                    : AppColors.darkSecondary,
+          Expanded(
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: onHourlyForecastTap,
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Hourly Forecast',
+                    style: AppTextStyles.semibold15(context).copyWith(
+                      color: isHourlySelected
+                          ? AppColors.darkPrimary
+                          : AppColors.darkSecondary,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
-          GestureDetector(
-            onTap: onWeeklyForecastTap,
-            child: Text(
-              'Weekly Forecast',
-              style: AppTextStyles.semibold15(context).copyWith(
-                color: isHourlySelected
-                    ? AppColors.darkSecondary
-                    : AppColors.darkPrimary,
+          Expanded(
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: onWeeklyForecastTap,
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    'Weekly Forecast',
+                    style: AppTextStyles.semibold15(context).copyWith(
+                      color: isHourlySelected
+                          ? AppColors.darkSecondary
+                          : AppColors.darkPrimary,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),

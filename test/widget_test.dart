@@ -1,3 +1,5 @@
+import 'dart:ui' show Size;
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:purplee/main.dart';
 import 'package:purplee/shared/widgets/custom_hourly_carousel_view.dart';
@@ -9,6 +11,11 @@ void main() {
   testWidgets(
     'App renders HomeView with SegmentedControl and CustomCarouselView',
     (WidgetTester tester) async {
+      tester.view.physicalSize = const Size(375, 812);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+
       await tester.pumpWidget(const Purplee());
       await tester.pumpAndSettle();
 
