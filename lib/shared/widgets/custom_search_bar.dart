@@ -35,10 +35,10 @@ class CustomSearchBar extends StatelessWidget {
         controller: controller,
         onChanged: onChanged,
         onTap: onTap,
-        style: AppTextStyles.regular17.copyWith(color: AppColors.darkPrimary),
+        style: AppTextStyles.regular17(context).copyWith(color: AppColors.darkPrimary),
         decoration: InputDecoration(
           hintText: 'Search for a city or airport',
-          hintStyle: AppTextStyles.regular17.copyWith(
+          hintStyle: AppTextStyles.regular17(context).copyWith(
             color: AppColors.darkSecondary,
           ),
           prefixIcon: const Padding(

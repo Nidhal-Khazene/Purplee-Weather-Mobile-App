@@ -25,7 +25,7 @@ class SegementedControl extends StatelessWidget {
             onTap: onHourlyForecastTap,
             child: Text(
               'Hourly Forecast',
-              style: AppTextStyles.semibold15.copyWith(
+              style: AppTextStyles.semibold15(context).copyWith(
                 color: isHourlySelected
                     ? AppColors.darkPrimary
                     : AppColors.darkSecondary,
@@ -36,7 +36,7 @@ class SegementedControl extends StatelessWidget {
             onTap: onWeeklyForecastTap,
             child: Text(
               'Weekly Forecast',
-              style: AppTextStyles.semibold15.copyWith(
+              style: AppTextStyles.semibold15(context).copyWith(
                 color: isHourlySelected
                     ? AppColors.darkSecondary
                     : AppColors.darkPrimary,

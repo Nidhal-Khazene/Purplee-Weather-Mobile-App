@@ -35,13 +35,13 @@ class _HomeViewBodyState extends State<HomeViewBody> {
               Text(
                 'Montreal',
                 textAlign: TextAlign.center,
-                style: AppTextStyles.regular34.copyWith(color: Colors.white),
+                style: AppTextStyles.regular34(context).copyWith(color: Colors.white),
               ),
               const SizedBox(height: 12),
               Text(
                 '19°',
                 textAlign: TextAlign.center,
-                style: AppTextStyles.extraLight96.copyWith(color: Colors.white),
+                style: AppTextStyles.extraLight96(context).copyWith(color: Colors.white),
               ),
               const SizedBox(height: 12),
               Text.rich(
@@ -49,14 +49,14 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   children: [
                     TextSpan(
                       text: 'Mostly Clear\n',
-                      style: AppTextStyles.semibold20.copyWith(
+                      style: AppTextStyles.semibold20(context).copyWith(
                         color: const Color(0x99EBEBF5),
                         fontFamily: AppFonts.primary,
                       ),
                     ),
                     TextSpan(
                       text: 'H:24°   L:18°',
-                      style: AppTextStyles.semibold20.copyWith(
+                      style: AppTextStyles.semibold20(context).copyWith(
                         color: Colors.white,
                         fontFamily: AppFonts.primary,
                       ),

@@ -65,7 +65,7 @@ class HourlyWeatherCarouselItem extends StatelessWidget {
             child: Text(
               time,
               maxLines: 1,
-              style: AppTextStyles.semibold15.copyWith(color: Colors.white),
+              style: AppTextStyles.semibold15(context).copyWith(color: Colors.white),
             ),
           ),
           Column(
@@ -79,7 +79,7 @@ class HourlyWeatherCarouselItem extends StatelessWidget {
                   child: Text(
                     chanceOfRain!,
                     maxLines: 1,
-                    style: AppTextStyles.semibold13.copyWith(
+                    style: AppTextStyles.semibold13(context).copyWith(
                       color: const Color(0xFF40CBD8),
                     ),
                   ),
@@ -94,7 +94,7 @@ class HourlyWeatherCarouselItem extends StatelessWidget {
             child: Text(
               temperature,
               maxLines: 1,
-              style: AppTextStyles.regular20.copyWith(color: Colors.white),
+              style: AppTextStyles.regular20(context).copyWith(color: Colors.white),
             ),
           ),
         ],

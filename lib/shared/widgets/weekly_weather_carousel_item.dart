@@ -68,7 +68,7 @@ class WeeklyWeatherCarouselItem extends StatelessWidget {
                 child: Text(
                   day,
                   maxLines: 1,
-                  style: AppTextStyles.semibold15.copyWith(color: Colors.white),
+                  style: AppTextStyles.semibold15(context).copyWith(color: Colors.white),
                 ),
               ),
             ],
@@ -84,7 +84,7 @@ class WeeklyWeatherCarouselItem extends StatelessWidget {
                   child: Text(
                     chanceOfRain!,
                     maxLines: 1,
-                    style: AppTextStyles.semibold13.copyWith(
+                    style: AppTextStyles.semibold13(context).copyWith(
                       color: const Color(0xFF40CBD8),
                     ),
                   ),
@@ -99,7 +99,7 @@ class WeeklyWeatherCarouselItem extends StatelessWidget {
             child: Text(
               temperature,
               maxLines: 1,
-              style: AppTextStyles.regular20.copyWith(color: Colors.white),
+              style: AppTextStyles.regular20(context).copyWith(color: Colors.white),
             ),
           ),
         ],

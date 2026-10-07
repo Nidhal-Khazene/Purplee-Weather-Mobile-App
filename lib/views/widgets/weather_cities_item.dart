@@ -49,7 +49,7 @@ class _WeatherCitiesItemState extends State<WeatherCitiesItem> {
                   children: [
                     Text(
                       '${widget.weatherCityModel.temperature}°',
-                      style: AppTextStyles.regular64.copyWith(
+                      style: AppTextStyles.regular64(context).copyWith(
                         color: Colors.white,
                       ),
                     ),
@@ -59,13 +59,13 @@ class _WeatherCitiesItemState extends State<WeatherCitiesItem> {
                           TextSpan(
                             text:
                                 'H:${widget.weatherCityModel.highTemp}°  L:${widget.weatherCityModel.lowTemp}°\n',
-                            style: AppTextStyles.regular13.copyWith(
+                            style: AppTextStyles.regular13(context).copyWith(
                               color: AppColors.darkSecondary,
                             ),
                           ),
                           TextSpan(
                             text: widget.weatherCityModel.location,
-                            style: AppTextStyles.regular17.copyWith(
+                            style: AppTextStyles.regular17(context).copyWith(
                               color: Colors.white,
                             ),
                           ),
@@ -92,7 +92,7 @@ class _WeatherCitiesItemState extends State<WeatherCitiesItem> {
                 child: Text(
                   widget.weatherCityModel.weatherState,
                   textAlign: TextAlign.right,
-                  style: AppTextStyles.regular13.copyWith(color: Colors.white),
+                  style: AppTextStyles.regular13(context).copyWith(color: Colors.white),
                 ),
               ),
             ],

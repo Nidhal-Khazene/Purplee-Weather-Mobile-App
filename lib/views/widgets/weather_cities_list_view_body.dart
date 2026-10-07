@@ -101,7 +101,7 @@ class WeatherCitiesListViewBody extends StatelessWidget {
                     const SizedBox(width: 5),
                     Text(
                       'Weather',
-                      style: AppTextStyles.regular28.copyWith(
+                      style: AppTextStyles.regular28(context).copyWith(
                         color: Colors.white,
                       ),
                     ),
