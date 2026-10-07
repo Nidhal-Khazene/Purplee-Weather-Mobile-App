@@ -34,9 +34,17 @@ class Assets {
   /// assets/images/moon_cloud_fast_wind.png
   static const String assetsImagesMoonCloudFastWind = "assets/images/moon_cloud_fast_wind.png";
 
+  /// Assets for assetsImagesMoonCloudFastWindBig
+  /// assets/images/moon_cloud_fast_wind_big.png
+  static const String assetsImagesMoonCloudFastWindBig = "assets/images/moon_cloud_fast_wind_big.png";
+
   /// Assets for assetsImagesMoonCloudMidRain
   /// assets/images/moon_cloud_mid_rain.png
   static const String assetsImagesMoonCloudMidRain = "assets/images/moon_cloud_mid_rain.png";
+
+  /// Assets for assetsImagesMoonCloudMidRainBig
+  /// assets/images/moon_cloud_mid_rain_big.png
+  static const String assetsImagesMoonCloudMidRainBig = "assets/images/moon_cloud_mid_rain_big.png";
 
   /// Assets for assetsImagesPlusIcon
   /// assets/images/plus_icon.svg
@@ -46,13 +54,25 @@ class Assets {
   /// assets/images/sun_cloud_angled_rain.png
   static const String assetsImagesSunCloudAngledRain = "assets/images/sun_cloud_angled_rain.png";
 
+  /// Assets for assetsImagesSunCloudAngledRainBig
+  /// assets/images/sun_cloud_angled_rain_big.png
+  static const String assetsImagesSunCloudAngledRainBig = "assets/images/sun_cloud_angled_rain_big.png";
+
   /// Assets for assetsImagesSunCloudMidRain
   /// assets/images/sun_cloud_mid_rain.png
   static const String assetsImagesSunCloudMidRain = "assets/images/sun_cloud_mid_rain.png";
 
+  /// Assets for assetsImagesSunCloudMidRainBig
+  /// assets/images/sun_cloud_mid_rain_big.png
+  static const String assetsImagesSunCloudMidRainBig = "assets/images/sun_cloud_mid_rain_big.png";
+
   /// Assets for assetsImagesTornado
   /// assets/images/tornado.png
   static const String assetsImagesTornado = "assets/images/tornado.png";
+
+  /// Assets for assetsImagesTornadoBig
+  /// assets/images/tornado_big.png
+  static const String assetsImagesTornadoBig = "assets/images/tornado_big.png";
 
   /// Assets for assetsImagesWeatherBg
   /// assets/images/weather_bg.png
