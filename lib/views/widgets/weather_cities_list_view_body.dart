@@ -20,6 +20,14 @@ class WeatherCitiesListViewBody extends StatelessWidget {
       image: Assets.assetsImagesMoonCloudMidRainBig,
     ),
     WeatherCityModel(
+      temperature: '22',
+      highTemp: '28',
+      lowTemp: '16',
+      location: 'Tennessee, USA',
+      weatherState: 'Tornado',
+      image: Assets.assetsImagesTornadoBig,
+    ),
+    WeatherCityModel(
       temperature: '20',
       highTemp: '21',
       lowTemp: '-19',
@@ -35,12 +43,21 @@ class WeatherCitiesListViewBody extends StatelessWidget {
       weatherState: 'Showers',
       image: Assets.assetsImagesSunCloudAngledRainBig,
     ),
+
     WeatherCityModel(
-      temperature: '22',
-      highTemp: '28',
-      lowTemp: '16',
-      location: 'Tennessee, USA',
-      weatherState: 'Tornado',
+      temperature: "19",
+      highTemp: "26",
+      lowTemp: "18",
+      location: "Montreal, Canada",
+      weatherState: "Mid Rain",
+      image: Assets.assetsImagesMoonCloudMidRainBig,
+    ),
+    WeatherCityModel(
+      temperature: "29",
+      highTemp: "32",
+      lowTemp: "16",
+      location: "New York, USA",
+      weatherState: "Tornado",
       image: Assets.assetsImagesTornadoBig,
     ),
   ];
