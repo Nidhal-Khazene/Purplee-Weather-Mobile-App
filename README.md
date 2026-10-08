@@ -2,6 +2,14 @@
 
 Purplee is a Flutter weather application inspired by a modern weather UI concept from Figma. The app is designed to provide a clean, premium, and mobile-friendly weather experience with an atmospheric color palette, soft glassmorphism-inspired cards, and focused forecast information.
 
+## Preview
+
+<p align="center">
+  <img src="assets/preview/preview_1.png" width="30%" />
+  <img src="assets/preview/preview_2.png" width="30%" />
+  <img src="assets/preview/preview_3.png" width="30%" />
+</p>
+
 ## Design Inspiration
 
 This project follows the weather app UI design available in Figma:
@@ -29,12 +37,18 @@ The design focuses on:
 - Flutter
 - Dart
 - Material Design
+- [flutter_svg](https://pub.dev/packages/flutter_svg) for SVG rendering
+- [flutter_screenutil](https://pub.dev/packages/flutter_screenutil) for responsive UI sizing
 
 ## Project Structure
 
 ```bash
 lib/
-  main.dart
+  core/      # Core utilities and configuration
+  features/  # Feature-specific implementations
+  shared/    # Shared widgets and logic
+  views/     # Application screens and UI components
+  main.dart  # App entry point
 ```
 
 ## Getting Started

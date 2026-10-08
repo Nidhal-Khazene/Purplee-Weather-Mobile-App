@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:purplee/core/utils/app_text_styles.dart';
-import 'package:purplee/views/widgets/weather_cards/weather_card.dart';
+import 'package:purplee/views/widgets/weather_card.dart';
 
 class WeatherDetailsContent extends StatelessWidget {
   const WeatherDetailsContent({super.key});
@@ -472,7 +472,10 @@ class CompassPainter extends CustomPainter {
     arrowHead.lineTo(center.dx - radius + arrowPadding + 6, center.dy - 3);
     arrowHead.lineTo(center.dx - radius + arrowPadding + 6, center.dy + 3);
     arrowHead.close();
-    canvas.drawPath(arrowHead, Paint()..color = Colors.white.withValues(alpha: 0.8));
+    canvas.drawPath(
+      arrowHead,
+      Paint()..color = Colors.white.withValues(alpha: 0.8),
+    );
   }
 
   void _drawText(Canvas canvas, String text, Offset position) {
