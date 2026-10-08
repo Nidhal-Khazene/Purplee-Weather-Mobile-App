@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:purplee/core/utils/app_colors.dart';
 import 'package:purplee/core/utils/app_text_styles.dart';
@@ -24,7 +26,7 @@ class _WeatherDetailsViewBodyState extends State<WeatherDetailsViewBody> {
           child: Image.asset(Assets.assetsImagesWeatherBg, fit: BoxFit.cover),
         ),
         Positioned(
-          top: 8,
+          top: 24,
           right: 0,
           left: 0,
           child: Image.asset(Assets.assetsImagesWeatherBgShadow),
@@ -106,6 +108,17 @@ class _WeatherDetailsViewBodyState extends State<WeatherDetailsViewBody> {
                   child: const WeatherDetailsContent(),
                 ),
               ],
+            ),
+          ),
+        ),
+        Positioned(
+          top: 64,
+          left: 16,
+          child: IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: Transform.rotate(
+              angle: -math.pi / 2,
+              child: const Icon(Icons.arrow_back_ios_new, color: Colors.white),
             ),
           ),
         ),

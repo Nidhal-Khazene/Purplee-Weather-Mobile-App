@@ -8,8 +8,18 @@ Route<dynamic>? onGenerateRoutes(RouteSettings settings) {
     case HomeView.routeName:
       return MaterialPageRoute(builder: (context) => const HomeView());
     case WeatherDetailsView.routeName:
-      return MaterialPageRoute(
-        builder: (context) => const WeatherDetailsView(),
+      return PageRouteBuilder<void>(
+        settings: settings,
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            const WeatherDetailsView(),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          final position = Tween<Offset>(
+            begin: const Offset(0, 1),
+            end: Offset.zero,
+          ).chain(CurveTween(curve: Curves.easeOutCubic)).animate(animation);
+
+          return SlideTransition(position: position, child: child);
+        },
       );
     case WeatherCitiesListView.routeName:
       return MaterialPageRoute(
