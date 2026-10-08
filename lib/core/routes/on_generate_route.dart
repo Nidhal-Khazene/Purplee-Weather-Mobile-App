@@ -10,6 +10,8 @@ Route<dynamic>? onGenerateRoutes(RouteSettings settings) {
     case WeatherDetailsView.routeName:
       return PageRouteBuilder<void>(
         settings: settings,
+        transitionDuration: const Duration(milliseconds: 1200),
+        reverseTransitionDuration: const Duration(milliseconds: 600),
         pageBuilder: (context, animation, secondaryAnimation) =>
             const WeatherDetailsView(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
