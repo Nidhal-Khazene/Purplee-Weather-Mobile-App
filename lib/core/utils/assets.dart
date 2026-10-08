@@ -1,16 +1,14 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
+  
   /// Assets for assetsImagesAccessoryIcon
   /// assets/images/accessory_icon.svg
-  static const String assetsImagesAccessoryIcon =
-      "assets/images/accessory_icon.svg";
+  static const String assetsImagesAccessoryIcon = "assets/images/accessory_icon.svg";
 
   /// Assets for assetsImagesBottomNavBar
   /// assets/images/bottom_nav_bar.png
-  static const String assetsImagesBottomNavBar =
-      "assets/images/bottom_nav_bar.png";
+  static const String assetsImagesBottomNavBar = "assets/images/bottom_nav_bar.png";
 
   /// Assets for assetsImagesHouse
   /// assets/images/house.png
@@ -22,8 +20,7 @@ class Assets {
 
   /// Assets for assetsImagesMainImageBg
   /// assets/images/main_image_bg.png
-  static const String assetsImagesMainImageBg =
-      "assets/images/main_image_bg.png";
+  static const String assetsImagesMainImageBg = "assets/images/main_image_bg.png";
 
   /// Assets for assetsImagesMapIcon
   /// assets/images/map_icon.svg
@@ -35,23 +32,19 @@ class Assets {
 
   /// Assets for assetsImagesMoonCloudFastWind
   /// assets/images/moon_cloud_fast_wind.png
-  static const String assetsImagesMoonCloudFastWind =
-      "assets/images/moon_cloud_fast_wind.png";
+  static const String assetsImagesMoonCloudFastWind = "assets/images/moon_cloud_fast_wind.png";
 
   /// Assets for assetsImagesMoonCloudFastWindBig
   /// assets/images/moon_cloud_fast_wind_big.png
-  static const String assetsImagesMoonCloudFastWindBig =
-      "assets/images/moon_cloud_fast_wind_big.png";
+  static const String assetsImagesMoonCloudFastWindBig = "assets/images/moon_cloud_fast_wind_big.png";
 
   /// Assets for assetsImagesMoonCloudMidRain
   /// assets/images/moon_cloud_mid_rain.png
-  static const String assetsImagesMoonCloudMidRain =
-      "assets/images/moon_cloud_mid_rain.png";
+  static const String assetsImagesMoonCloudMidRain = "assets/images/moon_cloud_mid_rain.png";
 
   /// Assets for assetsImagesMoonCloudMidRainBig
   /// assets/images/moon_cloud_mid_rain_big.png
-  static const String assetsImagesMoonCloudMidRainBig =
-      "assets/images/moon_cloud_mid_rain_big.png";
+  static const String assetsImagesMoonCloudMidRainBig = "assets/images/moon_cloud_mid_rain_big.png";
 
   /// Assets for assetsImagesPlusIcon
   /// assets/images/plus_icon.svg
@@ -59,23 +52,19 @@ class Assets {
 
   /// Assets for assetsImagesSunCloudAngledRain
   /// assets/images/sun_cloud_angled_rain.png
-  static const String assetsImagesSunCloudAngledRain =
-      "assets/images/sun_cloud_angled_rain.png";
+  static const String assetsImagesSunCloudAngledRain = "assets/images/sun_cloud_angled_rain.png";
 
   /// Assets for assetsImagesSunCloudAngledRainBig
   /// assets/images/sun_cloud_angled_rain_big.png
-  static const String assetsImagesSunCloudAngledRainBig =
-      "assets/images/sun_cloud_angled_rain_big.png";
+  static const String assetsImagesSunCloudAngledRainBig = "assets/images/sun_cloud_angled_rain_big.png";
 
   /// Assets for assetsImagesSunCloudMidRain
   /// assets/images/sun_cloud_mid_rain.png
-  static const String assetsImagesSunCloudMidRain =
-      "assets/images/sun_cloud_mid_rain.png";
+  static const String assetsImagesSunCloudMidRain = "assets/images/sun_cloud_mid_rain.png";
 
   /// Assets for assetsImagesSunCloudMidRainBig
   /// assets/images/sun_cloud_mid_rain_big.png
-  static const String assetsImagesSunCloudMidRainBig =
-      "assets/images/sun_cloud_mid_rain_big.png";
+  static const String assetsImagesSunCloudMidRainBig = "assets/images/sun_cloud_mid_rain_big.png";
 
   /// Assets for assetsImagesTornado
   /// assets/images/tornado.png
@@ -91,11 +80,14 @@ class Assets {
 
   /// Assets for assetsImagesWeatherBgShadow
   /// assets/images/weather_bg_shadow.png
-  static const String assetsImagesWeatherBgShadow =
-      "assets/images/weather_bg_shadow.png";
+  static const String assetsImagesWeatherBgShadow = "assets/images/weather_bg_shadow.png";
+
+  /// Assets for assetsImagesWeatherRecatangle
+  /// assets/images/weather_recatangle.png
+  static const String assetsImagesWeatherRecatangle = "assets/images/weather_recatangle.png";
 
   /// Assets for assetsImagesWeatherRectangleItem
   /// assets/images/weather_rectangle_item.svg
-  static const String assetsImagesWeatherRectangleItem =
-      "assets/images/weather_rectangle_item.svg";
+  static const String assetsImagesWeatherRectangleItem = "assets/images/weather_rectangle_item.svg";
 }
+

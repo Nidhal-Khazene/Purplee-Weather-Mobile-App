@@ -78,8 +78,8 @@ class _CustomWeeklyCarouselViewState extends State<CustomWeeklyCarouselView> {
     return AspectRatio(
       aspectRatio: 2.1,
       child: CarouselView(
-        itemExtent: 70,
-        shrinkExtent: 70,
+        itemExtent: 80,
+        shrinkExtent: 80,
         backgroundColor: Colors.transparent,
         elevation: 0,
         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),

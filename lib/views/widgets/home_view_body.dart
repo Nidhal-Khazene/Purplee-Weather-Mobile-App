@@ -112,7 +112,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
         Positioned(
           bottom: MediaQuery.of(context).size.height * 0.12,
           left: MediaQuery.of(context).size.width * 0.07,
-          right: MediaQuery.of(context).size.width * 0.07,
+          right: MediaQuery.of(context).size.width * 0,
           child: isHourlySelected
               ? const CustomHourlyCarouselView()
               : const CustomWeeklyCarouselView(),
